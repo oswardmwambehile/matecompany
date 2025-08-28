@@ -115,8 +115,8 @@ Free Bootstrap 5 HTML Template
     <div class="container">
         <div class="row">
             <div class="col-lg-7 col-12 text-center mx-auto">
-                <h1 class="cd-headline rotate-1 text-white mb-4 pb-2 responsive-headline">
-                    <span class="headline-title">BURUDANI MWANZO MWISHO</span>
+                <h1 class="cd-headline rotate-1 mb-4 pb-2 responsive-headline">
+                    <span class="headline-title text-white">BURUDANI MWANZO MWISHO</span>
                     <span class="cd-words-wrapper responsive-words">
                         <b class="is-visible">Mwamba Vodika & Gin</b>
                         <b>Mwamba Vodika & Gin</b>
@@ -147,17 +147,7 @@ Free Bootstrap 5 HTML Template
 </section>
 
 <style>
-/* Keep words from breaking awkwardly */
-.responsive-words {
-    display: block;
-    white-space: normal !important;
-    word-break: break-word;
-    overflow: visible !important;
-    width: 100%;
-    text-align: center;
-}
-
-/* Ensure the headline is centered vertically and horizontally */
+/* Center and scale the headline */
 .cd-headline {
     display: flex;
     flex-direction: column;
@@ -166,26 +156,37 @@ Free Bootstrap 5 HTML Template
     text-align: center;
 }
 
-/* Style the main static text */
+/* Static headline line */
 .headline-title {
     display: block;
     margin-bottom: 0.5rem;
     font-weight: bold;
+    font-size: inherit;
 }
 
-/* Style each rotating b tag */
+/* Rotating words styling */
+.cd-words-wrapper {
+    display: block;
+    white-space: normal !important;
+    word-break: break-word;
+    overflow: visible !important;
+    width: 100%;
+    text-align: center;
+}
+
+/* Rotating text appearance (force yellow override) */
 .cd-words-wrapper b {
     display: inline-block;
     width: 100%;
     text-align: center;
-    color: #fff;
+    color: yellow !important; /* 🔥 This forces yellow */
+    font-weight: bold;
 }
 
-/* Default headline size */
+/* Main responsive headline style */
 .responsive-headline {
     font-size: 3rem;
     line-height: 1.3;
-    color: #fff;
 }
 
 /* Medium screens */
@@ -194,22 +195,23 @@ Free Bootstrap 5 HTML Template
         font-size: 2rem;
     }
 
-    .responsive-words b {
+    .cd-words-wrapper b {
         font-size: 1.8rem;
     }
 }
 
-/* Smallest screens */
+/* Small screens */
 @media (max-width: 576px) {
     .responsive-headline {
         font-size: 1.6rem;
     }
 
-    .responsive-words b {
+    .cd-words-wrapper b {
         font-size: 1.4rem;
     }
 }
 </style>
+
 
 
 
