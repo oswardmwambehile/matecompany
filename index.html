@@ -116,7 +116,7 @@ Free Bootstrap 5 HTML Template
         <div class="row">
             <div class="col-lg-7 col-12 text-center mx-auto">
                 <h1 class="cd-headline rotate-1 text-white mb-4 pb-2 responsive-headline">
-                    <span>BURUDANI MWANZO MWISHO</span>
+                    <span class="headline-title">BURUDANI MWANZO MWISHO</span>
                     <span class="cd-words-wrapper responsive-words">
                         <b class="is-visible">Mwamba Vodika & Gin</b>
                         <b>Mwamba Vodika & Gin</b>
@@ -145,22 +145,50 @@ Free Bootstrap 5 HTML Template
         </div>
     </div>
 </section>
+
 <style>
-    /* Ensure text wraps and is not cut off */
+/* Keep words from breaking awkwardly */
 .responsive-words {
     display: block;
     white-space: normal !important;
     word-break: break-word;
     overflow: visible !important;
     width: 100%;
+    text-align: center;
 }
 
-/* Make headline scale nicely */
+/* Ensure the headline is centered vertically and horizontally */
+.cd-headline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Style the main static text */
+.headline-title {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+/* Style each rotating b tag */
+.cd-words-wrapper b {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+/* Default headline size */
 .responsive-headline {
     font-size: 3rem;
     line-height: 1.3;
+    color: #fff;
 }
 
+/* Medium screens */
 @media (max-width: 768px) {
     .responsive-headline {
         font-size: 2rem;
@@ -171,16 +199,16 @@ Free Bootstrap 5 HTML Template
     }
 }
 
+/* Smallest screens */
 @media (max-width: 576px) {
     .responsive-headline {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
 
     .responsive-words b {
         font-size: 1.4rem;
     }
 }
-
 </style>
 
 
